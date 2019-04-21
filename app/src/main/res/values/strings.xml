@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MachineLearningTutorial</string>
+    <string name="practice">Practice</string>
+    <string name="tutorial">Tutorial</string>
+</resources>
