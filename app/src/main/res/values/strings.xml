@@ -2,4 +2,7 @@
     <string name="app_name">MachineLearningTutorial</string>
     <string name="practice">Practice</string>
     <string name="tutorial">Tutorial</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="title">X</string>
 </resources>
