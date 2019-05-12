@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".tutorial.TutorialActivity"
-    android:background="@drawable/test"
+    android:background="@drawable/lights"
     android:padding="0dp">
 
     <com.example.papersleep.machinelearningtutorial.not_activity.MyActionBar

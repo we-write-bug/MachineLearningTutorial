@@ -12,4 +12,6 @@ TODO:
 - [ ] Tutorial.
 - [ ] Practice.
 - [x] Background.
+- [ ] Data transfer.
+- [ ] Rolling choose.
 - [ ] ....

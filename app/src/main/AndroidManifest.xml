@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools" package="com.example.papersleep.machinelearningtutorial">
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.example.papersleep.machinelearningtutorial">
 
     <application
         android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:fullBackupContent="@xml/backup_descriptor"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -23,6 +24,16 @@
         <activity android:name=".practice.PracticeActivity">
         </activity>
         <activity android:name=".not_activity.BaseActivity">
+        </activity>
+        <activity android:name=".practice.EnvSetting">
+        </activity>
+        <activity android:name=".practice.FuncSetting">
+        </activity>
+        <activity android:name=".practice.Evolution">
+        </activity>
+        <activity android:name=".practice.FightIt">
+        </activity>
+        <activity android:name=".practice.EndingAndSearching">
         </activity>
     </application>
 
