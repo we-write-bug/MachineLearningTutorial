@@ -1,4 +1,4 @@
-package com.example.papersleep.machinelearningtutorial;
+package com.example.papersleep.machinelearningtutorial.not_activity;
 
 import android.graphics.Color;
 import android.support.v7.app.ActionBar;

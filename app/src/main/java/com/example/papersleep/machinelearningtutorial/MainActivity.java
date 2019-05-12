@@ -4,6 +4,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+import com.example.papersleep.machinelearningtutorial.not_activity.BaseActivity;
+import com.example.papersleep.machinelearningtutorial.practice.PracticeActivity;
+import com.example.papersleep.machinelearningtutorial.tutorial.TutorialActivity;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 

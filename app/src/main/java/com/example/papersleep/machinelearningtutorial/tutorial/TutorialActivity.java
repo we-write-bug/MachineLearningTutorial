@@ -1,8 +1,10 @@
-package com.example.papersleep.machinelearningtutorial;
+package com.example.papersleep.machinelearningtutorial.tutorial;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import com.example.papersleep.machinelearningtutorial.R;
+import com.example.papersleep.machinelearningtutorial.not_activity.BaseActivity;
 
 public class TutorialActivity extends BaseActivity {
 

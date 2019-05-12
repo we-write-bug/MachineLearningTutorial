@@ -1,4 +1,4 @@
-package com.example.papersleep.machinelearningtutorial;
+package com.example.papersleep.machinelearningtutorial.not_activity;
 
 import android.app.Activity;
 
