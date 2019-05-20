@@ -3,10 +3,12 @@ package com.example.papersleep.machinelearningtutorial;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 import com.example.papersleep.machinelearningtutorial.not_activity.BaseActivity;
 import com.example.papersleep.machinelearningtutorial.practice.PracticeActivity;
 import com.example.papersleep.machinelearningtutorial.tutorial.TutorialActivity;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
@@ -25,9 +27,16 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         switch (v.getId()){
             case R.id.cover_tutorial:
                 TutorialActivity.startAction(this);
-                Toast.makeText(this,"Xixi",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.cover_practice:
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        Map map = new HashMap();
+                        map.put("robot", "RepeatRobot");
+                        System.out.println("your score is:" + httpUrlConnPost(map));
+                    }
+                }).start();
                 PracticeActivity.startAction(this);
                 break;
         }

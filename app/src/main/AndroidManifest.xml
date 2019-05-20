@@ -2,8 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
           package="com.example.papersleep.machinelearningtutorial">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_descriptor"
         android:icon="@mipmap/ic_launcher"
@@ -11,7 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning">
+        tools:ignore="GoogleAppIndexingWarning,UnusedAttribute">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -21,19 +23,26 @@
         </activity>
         <activity android:name=".tutorial.TutorialActivity">
         </activity>
-        <activity android:name=".practice.PracticeActivity">
+        <activity android:name=".practice.PracticeActivity"
+                  android:launchMode="singleTask">
         </activity>
-        <activity android:name=".not_activity.BaseActivity">
+        <activity android:name=".not_activity.BaseActivity"
+                  android:launchMode="singleTask">
         </activity>
-        <activity android:name=".practice.EnvSetting">
+        <activity android:name=".practice.EnvSetting"
+                  android:launchMode="singleTask">
         </activity>
-        <activity android:name=".practice.FuncSetting">
+        <activity android:name=".practice.FuncSetting"
+                  android:launchMode="singleTask">
         </activity>
-        <activity android:name=".practice.Evolution">
+        <activity android:name=".practice.Evolution"
+                  android:launchMode="singleTask">
         </activity>
-        <activity android:name=".practice.FightIt">
+        <activity android:name=".practice.FightIt"
+                  android:launchMode="singleTask">
         </activity>
-        <activity android:name=".practice.EndingAndSearching">
+        <activity android:name=".practice.EndingAndSearching"
+                  android:launchMode="singleTask">
         </activity>
     </application>
 

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--公共属性-->
+    <attr name="backColor" format="color" />
+    <attr name="backColorPress" format="color" />
+    <attr name="backGroundImage" format="reference" />
+    <attr name="backGroundImagePress" format="reference" />
+    <attr name="textColor" format="color" />
+    <attr name="textColorPress" format="color" />
+
+    <declare-styleable id="ss" name="MyButton">
+        <attr name="backColor" />
+        <attr name="backColorPress" />
+        <attr name="backGroundImage"  />
+        <attr name="backGroundImagePress" />
+        <attr name="textColor" />
+        <attr name="textColorPress" />
+        <attr name="fillet" format="boolean" />
+        <attr name="radius" format="float" />
+        <attr name="shape">
+            <enum name="rectangle" value="0" />
+            <enum name="oval" value="1" />
+            <enum name="line" value="2" />
+            <enum name="ring" value="3" />
+        </attr>
+    </declare-styleable>
+
+</resources>

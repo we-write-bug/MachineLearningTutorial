@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:papersleep="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".practice.EndingAndSearching"
     android:background="@drawable/lights"
     android:padding="0dp">
@@ -12,4 +14,63 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.example.papersleep.machinelearningtutorial.not_activity.MyButton
+            android:id="@+id/re_start"
+            android:text="@string/re_start"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:fontFamily="Microsoft YaHei"
+            android:textSize="22sp"
+            android:textAllCaps="false"
+            android:padding="5dp"
+            papersleep:backColor="#304090"
+            papersleep:backColorPress="#6090d0"
+            papersleep:fillet="true"
+            papersleep:radius="30"
+            papersleep:textColor="@android:color/white"
+        />
+
+        <com.example.papersleep.machinelearningtutorial.not_activity.MyButton
+            android:id="@+id/re_fight"
+            android:text="@string/re_fight"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:fontFamily="Microsoft YaHei"
+            android:textSize="22sp"
+            android:textAllCaps="false"
+            android:padding="5dp"
+            papersleep:backColor="#304090"
+            papersleep:backColorPress="#6090d0"
+            papersleep:fillet="true"
+            papersleep:radius="30"
+            papersleep:textColor="@android:color/white"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>
