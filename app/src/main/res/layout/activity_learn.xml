@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:papersleep="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".practice.PracticeActivity"
+    android:background="@drawable/lights"
+    android:backgroundTint="#1b1b1b"
+    android:padding="0dp">
+
+    <com.example.papersleep.machinelearningtutorial.not_activity.MyActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_weight="6"
+        android:background="@drawable/shape_corner"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:lineSpacingMultiplier="1.2"
+            android:text="学习更多"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_weight="1"
+            android:lineSpacingMultiplier="1.4"
+            android:singleLine="false"
+            android:text="- 一款博弈游戏《信任的进化》："
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_weight="1"
+            android:autoLink="web"
+            android:lineSpacingMultiplier="1.4"
+            android:singleLine="false"
+            android:text="https://sekai.co/trust/"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_weight="1"
+            android:lineSpacingMultiplier="1.4"
+            android:singleLine="false"
+            android:text=" 关于遗传算法一个有趣的视频："
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_weight="1"
+            android:autoLink="web"
+            android:lineSpacingMultiplier="1.4"
+            android:singleLine="false"
+            android:text="https://morvanzhou.github.io/tutorials/machine-learning/evolutionary-algorithm/2-01-genetic-algorithm/"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_weight="1"
+            android:lineSpacingMultiplier="1.4"
+            android:singleLine="false"
+            android:text="- 遗传算法实例1 用透明三角形拟合蒙娜丽莎："
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_weight="1"
+            android:autoLink="web"
+            android:lineSpacingMultiplier="1.4"
+            android:singleLine="false"
+            android:text="http://www.matrix67.com/blog/archives/1113"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_weight="1"
+            android:lineSpacingMultiplier="1.4"
+            android:singleLine="false"
+            android:text="- 遗传算法实例2 进化出无敌的Flappy Bird："
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_weight="1"
+            android:autoLink="web"
+            android:lineSpacingMultiplier="1.4"
+            android:singleLine="false"
+            android:text="https://xviniette.github.io/FlappyLearning/"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/example_allrobot" />
+    </LinearLayout>
+</LinearLayout>

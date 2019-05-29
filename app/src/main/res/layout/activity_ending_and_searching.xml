@@ -8,6 +8,7 @@
     android:orientation="vertical"
     tools:context=".practice.EndingAndSearching"
     android:background="@drawable/lights"
+    android:backgroundTint="#1b1b1b"
     android:padding="0dp">
 
     <com.example.papersleep.machinelearningtutorial.not_activity.MyActionBar
@@ -18,7 +19,30 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"
-        android:orientation="horizontal">
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/my_end_score"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/default_s"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/pop_end_score"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/default_s"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -28,8 +52,8 @@
         android:orientation="horizontal">
 
         <com.example.papersleep.machinelearningtutorial.not_activity.MyButton
-            android:id="@+id/re_start"
-            android:text="@string/re_start"
+            android:id="@+id/re_evo"
+            android:text="@string/re_evo"
 
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -50,8 +74,60 @@
         />
 
         <com.example.papersleep.machinelearningtutorial.not_activity.MyButton
-            android:id="@+id/re_fight"
-            android:text="@string/re_fight"
+            android:id="@+id/re_inquiry"
+            android:text="@string/re_inquiry"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:fontFamily="Microsoft YaHei"
+            android:textSize="22sp"
+            android:textAllCaps="false"
+            android:padding="5dp"
+            papersleep:backColor="#304090"
+            papersleep:backColorPress="#6090d0"
+            papersleep:fillet="true"
+            papersleep:radius="30"
+            papersleep:textColor="@android:color/white"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.example.papersleep.machinelearningtutorial.not_activity.MyButton
+            android:id="@+id/i_can"
+            android:text="我不服"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:fontFamily="Microsoft YaHei"
+            android:textSize="22sp"
+            android:textAllCaps="false"
+            android:padding="5dp"
+            papersleep:backColor="#304090"
+            papersleep:backColorPress="#6090d0"
+            papersleep:fillet="true"
+            papersleep:radius="30"
+            papersleep:textColor="@android:color/white"
+        />
+
+        <com.example.papersleep.machinelearningtutorial.not_activity.MyButton
+            android:id="@+id/to_next"
+            android:text="继续"
 
             android:layout_width="0dp"
             android:layout_weight="1"

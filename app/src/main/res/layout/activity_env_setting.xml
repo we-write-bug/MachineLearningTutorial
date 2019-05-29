@@ -8,6 +8,7 @@
     android:orientation="vertical"
     tools:context=".practice.EnvSetting"
     android:background="@drawable/lights"
+    android:backgroundTint="#1b1b1b"
     android:padding="0dp">
 
     <com.example.papersleep.machinelearningtutorial.not_activity.MyActionBar
@@ -25,13 +26,14 @@
             android:layout_height="0dp"
             android:layout_weight="4">
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/r1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_gravity="center"
-                android:layout_margin="10dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/ca"
             />
 
             <ImageButton
@@ -40,7 +42,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_gravity="center"
-                android:layout_margin="10dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/im"
             />
 
             <ImageButton
@@ -49,16 +52,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_gravity="center"
-                android:layout_margin="10dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/fury"
             />
-
             <ImageButton
                 android:id="@+id/r4"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_gravity="center"
-                android:layout_margin="10dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/hulk"
             />
 
         </LinearLayout>
@@ -72,13 +76,18 @@
                 android:id="@+id/big_r"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="5"/>
+                android:layout_weight="5"
+                android:src="@drawable/ca"/>
 
             <TextView
                 android:id="@+id/intro_r"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="4"/>
+                android:layout_weight="4"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#ffffff"/>
 
         </LinearLayout>
 
@@ -93,7 +102,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_gravity="center"
-                android:layout_margin="10dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/thor"
             />
 
             <ImageButton
@@ -102,7 +112,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_gravity="center"
-                android:layout_margin="10dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/groot"
             />
 
             <ImageButton
@@ -111,7 +122,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_gravity="center"
-                android:layout_margin="10dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/spider"
             />
 
             <ImageButton
@@ -120,7 +132,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_gravity="center"
-                android:layout_margin="10dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/panther"
             />
 
         </LinearLayout>
@@ -132,16 +145,19 @@
             android:orientation="horizontal">
 
             <SeekBar
-
                 android:id="@+id/env_roll"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="6"
                 android:max="20"
+                android:thumbTint="#2090F0"
+                android:maxHeight="4dp"
+                android:minHeight="2dp"
                 android:progressDrawable="@drawable/seek_bar_line"
-                android:thumb="@drawable/seek_bar_button"
-                android:progressTint="#ffffff"
+                android:progressTint="#7773ab"
             />
+
+            <!--android:thumb="@drawable/seek_bar_button"-->
 
             <TextView
                 android:id="@+id/num_show"
@@ -169,7 +185,7 @@
             android:id="@+id/to_func"
             android:text="@string/to_func"
 
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:textStyle="bold"

@@ -4,36 +4,34 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="0dp"
+    android:backgroundTint="#000000"
     android:orientation="horizontal">
 
-    <!--<Button-->
-    <!--android:id="@+id/bar_back"-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_weight="1"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_gravity="start|bottom"-->
 
-    <!--android:layout_marginTop="15dp"-->
-    <!--android:background="@layout/button_shape"-->
-    <!--android:text="@string/back"-->
-    <!--android:fontFamily="Microsoft YaHei"-->
-    <!--android:textSize="22sp"-->
-    <!--android:textStyle="bold"-->
-    <!--android:textAllCaps="false"/>-->
-
+    <ImageButton
+        android:id="@+id/bar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_margin="10dp"
+        android:paddingTop="1dp"
+        android:layout_gravity="center"
+        android:background="#00000000"
+        android:src="@drawable/back"
+        android:contentDescription="@string/back"/>
 
     <TextView
         android:id="@+id/title"
-        android:text="@string/title"
-
+        android:text="@string/default_s"
         android:layout_width="0dp"
         android:layout_weight="2"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:paddingTop="3dp"
         android:gravity="center"
-        android:layout_marginTop="20dp"
+        android:padding="10dp"
         android:fontFamily="Microsoft YaHei"
-        android:textSize="26sp"
+        android:textSize="23sp"
         android:textStyle="bold"
         android:textColor="#ffffff"/>
 
@@ -41,26 +39,12 @@
         android:id="@+id/bar_help"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="10dp"
+        android:paddingRight="20dp"
+        android:layout_margin="10dp"
+        android:paddingTop="1dp"
         android:layout_gravity="center"
         android:background="#00000000"
-        android:src="@drawable/bulb"
-        android:contentDescription="@string/des_help"/>
-
-    <!--<Button-->
-    <!--android:id="@+id/bar_next"-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_weight="1"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_gravity="end|bottom"-->
-
-    <!--android:layout_marginTop="15dp"-->
-    <!--android:background="@layout/button_shape"-->
-    <!--android:text="@string/next"-->
-    <!--android:fontFamily="Microsoft YaHei"-->
-    <!--android:textSize="22sp"-->
-    <!--android:textStyle="bold"-->
-    <!--android:textAllCaps="false"/>-->
+        android:src="@drawable/new_light"
+        android:contentDescription="@string/help"/>
 
 </LinearLayout>

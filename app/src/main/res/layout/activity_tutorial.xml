@@ -1,15 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
+    android:orientation="vertical"
+    xmlns:papersleep="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".tutorial.TutorialActivity"
-    android:background="@drawable/lights"
-    android:padding="0dp">
+    android:background="#1b1b1b"
+        android:padding="0dp">
 
-    <com.example.papersleep.machinelearningtutorial.not_activity.MyActionBar
+
+    <LinearLayout
+        android:id="@+id/jieshao"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent"
+        android:background="#1b1b1b"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <com.example.papersleep.machinelearningtutorial.not_activity.MyActionBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="6"
+            android:background="@drawable/shape_corner"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="96dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text=" Welcome！"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:lineSpacingMultiplier="1.4"
+                android:singleLine="false"
+                android:text="Hello！欢迎来到GeneticGamble！\n\n介系里没有见过的养成类游戏，只需体验三分钟，里就会像我一样，爱上介款游戏！\n\n在这个游戏中，你将深入浅出了解到【博弈论】和【遗传算法】的小知识！\n\n接下来，你将从两个故事中了解博弈游戏的规则和遗传算法的简单思想。\n\n之后，你将通过一个小游戏，选择合适进化环境，运用遗传算法进化出属于你的”机器人“，在我们设定的环境中与机器人进行博弈。\n\n游戏总时长约10分钟，Enjoy Yourself!
+    "
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.example.papersleep.machinelearningtutorial.not_activity.MyButton
+                android:id="@+id/start"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="现在开始8"
+                papersleep:backColor="#ff9900"
+                papersleep:backColorPress="#D0A360" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg" />
+
+    <ImageView
+        android:id="@+id/arrow1"
+        android:rotation="320"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="60dp"
+        android:src="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/explain_bulb"
+        android:layout_below="@id/arrow1"
+        android:layout_width="80dp"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/arrow1"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:text="点击这个灯泡可以查看讲解哦！"
+        />
+    <ImageView
+        android:id="@+id/arrow2"
+        android:rotation="230"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="60dp"
+        android:src="@drawable/arrow" />
+    <com.example.papersleep.machinelearningtutorial.not_activity.MyButton
+        android:id="@+id/understand"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="我明白了！"
+        papersleep:backColor="#FFFFFF"
+        papersleep:backColorPress="#D0A360" />
+    <TextView
+        android:lineSpacingMultiplier="1.2"
+        android:layout_below="@id/arrow2"
+        android:layout_toRightOf="@id/arrow2"
+        android:id="@+id/explain_arrow"
+        android:layout_marginTop="20dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="点击这个返回主界面"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        />
 
 </RelativeLayout>

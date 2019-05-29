@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:papersleep="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tutorial.TutorialActivity"
+    android:background="#1b1b1b"
+    android:padding="0dp"
+    >
+    <com.example.papersleep.machinelearningtutorial.not_activity.MyActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="6"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_corner"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="96dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="遗传算法"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:lineSpacingMultiplier="1.4"
+            android:singleLine="false"
+            android:text="这正是达尔文的进化论和孟德尔的遗传学说，\n\n 这个故事在现实中是虚假的，在计算机的世界里却是真实的。\n\n 今天，将充当”上帝“的角色，设置你的偏好，进化出能够与博弈机器人进行博弈游戏的“大白”。你的选择将决定着大白进化趋势与最终得分。\n\n在开始游戏之前，你还需要了解一些相关知识来帮助你更好地选择你的策略。"
+
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.example.papersleep.machinelearningtutorial.not_activity.MyButton
+            android:id="@+id/coding"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"
+            android:text="好的"
+            android:layout_centerHorizontal="true"
+            papersleep:backColor="#ff9900"
+            papersleep:backColorPress="#D0A360"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+</LinearLayout>

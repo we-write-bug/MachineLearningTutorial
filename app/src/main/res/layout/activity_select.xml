@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:papersleep="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tutorial.TutorialActivity"
+    android:background="#1b1b1b"
+    android:padding="0dp"
+    >
+    <com.example.papersleep.machinelearningtutorial.not_activity.MyActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="6"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_corner"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="96dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="选择"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:lineSpacingMultiplier="1.4"
+            android:singleLine="false"
+            android:text="大自然中，越适应环境的个体存活下来的概率越大。在计算机中，我们可以设定自己的“选择”策略。下面介绍几种常见的选择：\n\n - 轮盘赌选择：模拟自然界的选择，适应度越高越容易被选中。值得一提的是，适应度最高的不一定被选中，适应度最低的也不一定不被选中。（为什么叫这个名字？点击灯泡！）\n\n - 精英选择：在轮盘赌选择的基础上，适应度最高的个体一定会被选中。\n\n - 顺序选择：根据适应度的排名，按顺序选择一定数量的个体。\n\n - 倒序选择：根据适应度的倒序排名，选择出一定数量的个体。（退化选择）"
+
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.example.papersleep.machinelearningtutorial.not_activity.MyButton
+            android:id="@+id/variation"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"
+            android:text="还有呢？"
+            android:layout_centerHorizontal="true"
+            papersleep:backColor="#ff9900"
+            papersleep:backColorPress="#D0A360"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+</LinearLayout>

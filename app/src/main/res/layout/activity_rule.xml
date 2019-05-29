@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:papersleep="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tutorial.TutorialActivity"
+    android:background="#1b1b1b"
+    android:padding="0dp"
+    >
+    <com.example.papersleep.machinelearningtutorial.not_activity.MyActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="6"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_corner"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="游戏规则"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:lineSpacingMultiplier="1.4"
+            android:singleLine="false"
+            android:text="类似刚刚的囚徒困境故事，我们设定我们的博弈游戏规则为：\n\n -   一人背叛、一人合作：背叛者得3分，合作者0分。\n -   二人都合作：各得2分。\n -   二人都背叛：各得1分。 \n\n性格不同的人所做出的选择往往不同。现在，这里有几个不同性格的博弈机器人，你将通过与他们的博弈熟悉游戏规则。"
+
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:src="@drawable/map_all"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.example.papersleep.machinelearningtutorial.not_activity.MyButton
+            android:id="@+id/to_fight"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"
+            android:text="来玩一把!"
+            android:layout_centerHorizontal="true"
+            papersleep:backColor="#ff9900"
+            papersleep:backColorPress="#D0A360"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.LoadingActivity">
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+    <com.example.papersleep.machinelearningtutorial.view.CustomHorizontalProgresWithNum
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/horizontalProgress2"
+        android:progress="0"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/cover_practice"
+        android:layout_margin="600dp"
+        android:background="#1b1b1b1b"
+        app:HorizontalProgresReachColor="#ff9900"
+        app:HorizontalProgresUnReachColor="#1b1b1b"
+        app:HorizontalProgresTextColor="#ff9900"
+        android:layout_width="300dp"
+        android:layout_height="30dp">
+
+    </com.example.papersleep.machinelearningtutorial.view.CustomHorizontalProgresWithNum>
+
+</RelativeLayout>

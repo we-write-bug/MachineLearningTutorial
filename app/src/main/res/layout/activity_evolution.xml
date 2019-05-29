@@ -8,30 +8,80 @@
     android:orientation="vertical"
     tools:context=".practice.Evolution"
     android:background="@drawable/lights"
+    android:backgroundTint="#1b1b1b"
     android:padding="0dp">
 
     <com.example.papersleep.machinelearningtutorial.not_activity.MyActionBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="5"
-        android:orientation="horizontal">
-    </LinearLayout>
+        android:layout_weight="5">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="#FF9900"
+                android:textStyle="bold"
+                android:id="@+id/top_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.2"
+                android:text="@string/default_s"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical">
-
         <com.example.papersleep.machinelearningtutorial.not_activity.MyButton
-            android:id="@+id/to_fight"
-            android:text="@string/to_fight"
+            android:id="@+id/to_inquiry"
+            android:text="@string/to_inquiry"
+            android:visibility="gone"
 
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:fontFamily="Microsoft YaHei"
+            android:textSize="22sp"
+            android:textAllCaps="false"
+            android:padding="5dp"
+            papersleep:backColor="#304090"
+            papersleep:backColorPress="#6090d0"
+            papersleep:fillet="true"
+            papersleep:radius="30"
+            papersleep:textColor="@android:color/white"
+            />
+
+
+
+        <com.example.papersleep.machinelearningtutorial.not_activity.MyButton
+            android:id="@+id/show_res"
+            android:text="@string/show_res"
+
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:textStyle="bold"

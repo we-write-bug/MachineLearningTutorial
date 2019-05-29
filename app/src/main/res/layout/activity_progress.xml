@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".ProgressActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.example.papersleep.machinelearningtutorial.view.CustomHorizontalProgresWithNum
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/horizontalProgress2"
+            android:progress="0"
+            android:background="#ffffff"
+            app:HorizontalProgresReachColor="#36513e"
+            app:HorizontalProgresUnReachColor="#ffffff"
+            app:HorizontalProgresTextColor="#36513e"
+            android:layout_width="200dp"
+            android:layout_height="30dp">
+
+        </com.example.papersleep.machinelearningtutorial.view.CustomHorizontalProgresWithNum>
+    </LinearLayout>
+</ScrollView>

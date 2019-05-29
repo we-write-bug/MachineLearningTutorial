@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:papersleep="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tutorial.TutorialActivity"
+    android:background="#1b1b1b"
+    android:padding="0dp"
+>
+    <com.example.papersleep.machinelearningtutorial.not_activity.MyActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="6"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_corner"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="开发人员"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:lineSpacingMultiplier="1.4"
+            android:singleLine="false"
+            android:text="2019年南京大学EL比赛作品\n\n开发团队：在你来之前我们就已经在写bug队\n\n成员：苗轶轩、陈彦泽、刘学卓、黄雨晨"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="220dp"
+            android:src="@drawable/example_allrobot"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.example.papersleep.machinelearningtutorial.not_activity.MyButton
+            android:id="@+id/cont_d"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"
+            android:text="好的"
+            android:layout_centerHorizontal="true"
+            papersleep:backColor="#ff9900"
+            papersleep:backColorPress="#D0A360"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+</LinearLayout>

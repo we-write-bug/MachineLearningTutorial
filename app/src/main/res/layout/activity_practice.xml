@@ -16,28 +16,51 @@
         android:layout_height="wrap_content"/>
 
     <LinearLayout
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="6"
+        android:layout_margin="10dp"
         android:layout_width="match_parent"
+        android:orientation="vertical"
         android:layout_height="0dp"
-        android:layout_weight="5"
-        android:orientation="vertical">
+        android:background="@drawable/shape_corner"
+        tools:ignore="MissingConstraints">
 
         <TextView
-            android:id="@+id/description"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="@string/description"
-            android:textSize="40sp"
-            android:fontFamily="Microsoft YaHei"
-            android:textColor="#ffffff"/>
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text=" 进化环境"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
 
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:lineSpacingMultiplier="1.4"
+            android:singleLine="false"
+            android:text="还记得那年大明湖畔的博弈机器人吗？\n\n事实上，这里一共有八类性格不同的博弈机器人。在下一页中，你可以任意挑选种类和数量的博弈机器人作为陪练。\n\n比赛环境为1~8号博弈机器人各8±2只（由随机数决定），你将养成自己的博弈机器人——“大白”与他们一一博弈。\n\n之后，你将构建一个和你性格相似的机器人或是亲自上场进行博弈，看看你的分数能否高过你的杰作呢？"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:src="@drawable/example_allrobot"
+            android:layout_gravity="center"/>
     </LinearLayout>
 
     <com.example.papersleep.machinelearningtutorial.not_activity.MyButton
         android:id="@+id/to_env"
         android:text="@string/to_env"
 
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:textStyle="bold"

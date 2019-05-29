@@ -4,11 +4,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.SeekBar;
+import android.widget.*;
 import android.widget.SeekBar.OnSeekBarChangeListener;
-import android.widget.TextView;
 import com.example.papersleep.machinelearningtutorial.R;
 import com.example.papersleep.machinelearningtutorial.not_activity.BaseActivity;
 import com.example.papersleep.machinelearningtutorial.not_activity.DataCollector;
@@ -28,7 +25,7 @@ public class EnvSetting extends BaseActivity implements OnSeekBarChangeListener 
     private ImageView r6;
     private ImageView r7;
     private ImageView r8;
-    Integer num = 1;
+    Integer id = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,7 +58,7 @@ public class EnvSetting extends BaseActivity implements OnSeekBarChangeListener 
 
         seekBar.setOnSeekBarChangeListener(this);
 
-        title.setText(R.string.setting_title);
+        title.setText("选择陪练机器人");
 
     }
 
@@ -73,33 +70,56 @@ public class EnvSetting extends BaseActivity implements OnSeekBarChangeListener 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.to_func:
-                FuncSetting.startAction(this);
-                break;
             case R.id.r1:
-                seekBar.setProgress(0);
-                num = 1;
+                id = 1;
+                seekBar.setProgress(DataCollector.nums[0]);
+                bigR.setImageResource(R.drawable.ca);
+                introR.setText(R.string.setting_title);
                 break;
             case R.id.r2:
-                num = 2;
+                id = 2;
+                seekBar.setProgress(DataCollector.nums[1]);
+                bigR.setImageResource(R.drawable.im);
+                introR.setText(R.string.setting_title);
                 break;
             case R.id.r3:
-                num = 3;
+                id = 3;
+                seekBar.setProgress(DataCollector.nums[2]);
+                bigR.setImageResource(R.drawable.fury);
+                introR.setText(R.string.setting_title);
                 break;
             case R.id.r4:
-                num = 4;
+                id = 4;
+                seekBar.setProgress(DataCollector.nums[3]);
+                bigR.setImageResource(R.drawable.hulk);
+                introR.setText(R.string.setting_title);
                 break;
             case R.id.r5:
-                num = 5;
+                id = 5;
+                seekBar.setProgress(DataCollector.nums[4]);
+                bigR.setImageResource(R.drawable.thor);
+                introR.setText(R.string.setting_title);
                 break;
             case R.id.r6:
-                num = 6;
+                id = 6;
+                seekBar.setProgress(DataCollector.nums[5]);
+                bigR.setImageResource(R.drawable.groot);
+                introR.setText(R.string.setting_title);
                 break;
             case R.id.r7:
-                num = 7;
+                id = 7;
+                seekBar.setProgress(DataCollector.nums[6]);
+                bigR.setImageResource(R.drawable.spider);
+                introR.setText(R.string.setting_title);
                 break;
             case R.id.r8:
-                num = 8;
+                id = 8;
+                seekBar.setProgress(DataCollector.nums[7]);
+                bigR.setImageResource(R.drawable.panther);
+                introR.setText(R.string.setting_title);
+                break;
+            case R.id.to_func:
+                FuncSetting.startAction(this);
                 break;
         }
     }
@@ -116,7 +136,41 @@ public class EnvSetting extends BaseActivity implements OnSeekBarChangeListener 
 
     @Override
     public void onStopTrackingTouch(SeekBar seekBar) {
-        num = seekBar.getProgress();
+        DataCollector.nums[id - 1] = seekBar.getProgress();
+        if(DataCollector.nums[0]>0){
+            r1.setBackgroundResource(R.drawable.ca_choose);
+        }else {
+            r1.setBackgroundResource(R.drawable.ca);
+        }
+        if(DataCollector.nums[1]>0){
+            r2.setBackgroundResource(R.drawable.im_choose);
+        }else {
+            r2.setBackgroundResource(R.drawable.im);
+        }
+        if(DataCollector.nums[2]>0){
+            r3.setBackgroundResource(R.drawable.fury_choose);
+        }else {
+            r3.setBackgroundResource(R.drawable.fury);
+        }if(DataCollector.nums[3]>0){
+            r4.setBackgroundResource(R.drawable.hulk_choose);
+        }else {
+            r4.setBackgroundResource(R.drawable.hulk);
+        }if(DataCollector.nums[4]>0){
+            r5.setBackgroundResource(R.drawable.thor_choose);
+        }else {
+            r5.setBackgroundResource(R.drawable.thor);
+        }if(DataCollector.nums[5]>0){
+            r6.setBackgroundResource(R.drawable.groot_choose);
+        }else {
+            r6.setBackgroundResource(R.drawable.groot);
+        }if(DataCollector.nums[6]>0){
+            r7.setBackgroundResource(R.drawable.spider_choose);
+        }else {
+            r7.setBackgroundResource(R.drawable.spider);
+        }if(DataCollector.nums[7]>0){
+            r8.setBackgroundResource(R.drawable.panther_choose);
+        }else {
+            r8.setBackgroundResource(R.drawable.panther);
+        }
     }
-
 }

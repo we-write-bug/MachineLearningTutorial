@@ -2,16 +2,17 @@
 * App for El game. *
 ---
 @author el3000  
-@version v0.2  
-@change_date May.12
+@version v0.3
+@change_date May.20th
 ---
 TODO:
 - [x] Coverage.
-- [ ] Loading interface.
+- [x] Loading interface.
 - [x] Action and navigation bar.
 - [ ] Tutorial.
 - [ ] Practice.
 - [x] Background.
-- [ ] Data transfer.
-- [ ] Rolling choose.
+- [x] Data transfer.
+- [x] Choose.
+- [ ] Multi-Players.
 - [ ] ....

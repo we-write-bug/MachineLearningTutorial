@@ -11,21 +11,22 @@ import android.widget.Toast;
 import com.example.papersleep.machinelearningtutorial.R;
 import com.example.papersleep.machinelearningtutorial.not_activity.ActivityCollector;
 import com.example.papersleep.machinelearningtutorial.not_activity.BaseActivity;
+import com.example.papersleep.machinelearningtutorial.tutorial.Explanation;
 
 
 public class PracticeActivity extends BaseActivity {
+    Button toEnv;
+    TextView title;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_practice);
-        ActivityCollector.addActivity(this);
-        Button toEnv = findViewById(R.id.to_env);
-        ImageButton help = findViewById(R.id.bar_help);
-        TextView title = findViewById(R.id.title);
+
+        toEnv = findViewById(R.id.to_env);
+        title = findViewById(R.id.title);
         title.setText(R.string.practice);
         toEnv.setOnClickListener(this);
-        help.setOnClickListener(this);
     }
 
     public static void startAction(Context context) {
@@ -38,9 +39,6 @@ public class PracticeActivity extends BaseActivity {
         switch (v.getId()) {
             case R.id.to_env:
                 EnvSetting.startAction(this);
-                break;
-            case R.id.bar_help:
-                Toast.makeText(PracticeActivity.this,"Yeah",Toast.LENGTH_SHORT).show();
                 break;
         }
     }

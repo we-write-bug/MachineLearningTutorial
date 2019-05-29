@@ -6,12 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
-import org.json.JSONObject;
+import com.example.papersleep.machinelearningtutorial.MyJson.JSONObject;
 
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Map;
+
 
 public class BaseActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -19,14 +20,17 @@ public class BaseActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActivityCollector.addActivity(this);
-
         ActionBar actionBar = getSupportActionBar();
+
         if (actionBar != null) {
             actionBar.hide();
         }
-
+        View decorView = getWindow().getDecorView();
+//        SYSTEM_UI_FLAG_FULLSCREEN表示全屏的意思，也就是会将状态栏隐藏
+        //设置系统UI元素的可见性
+        decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN|View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+        //隐藏标题栏
         Window window = getWindow();
-        window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
         window.setStatusBarColor(Color.TRANSPARENT);
     }
 
@@ -38,15 +42,15 @@ public class BaseActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-        }
+        switch (v.getId()) { }
     }
 
-    public int httpUrlConnPost(Map map) {
+    static public int httpUrlConnPost(Map map) {
         HttpURLConnection urlConnection = null;
         int result = 0;
+
         try {
-            URL url = new URL("http://172.27.133.198:8080/ELweb/EL");
+            URL url = new URL("http://47.101.184.43:8080/EL/Servlet");
             urlConnection = (HttpURLConnection) url.openConnection();//打开http连接
             urlConnection.setConnectTimeout(5000);//连接的超时时间
             urlConnection.setUseCaches(false);//不使用缓存
@@ -66,7 +70,7 @@ public class BaseActivity extends AppCompatActivity implements View.OnClickListe
             bw.write(jsonStr);//把json字符串写入缓冲区中
             bw.flush();//刷新缓冲区，把数据发送出去，这步很重要
             out.close();
-            bw.close();//使用完关闭
+            bw.close();
             System.out.println("Successfully send data!");
             if (urlConnection.getResponseCode() == HttpURLConnection.HTTP_OK) {//得到服务端的返回码是否连接成功
                 //------------字符流读取服务端返回的数据------------
@@ -74,22 +78,22 @@ public class BaseActivity extends AppCompatActivity implements View.OnClickListe
                 BufferedReader br = new BufferedReader(new InputStreamReader(in));
                 String str;
                 StringBuffer buffer = new StringBuffer();
-                while ((str = br.readLine()) != null) {//BufferedReader特有功能，一次读取一行数据
+                while ((str = br.readLine()) != null)
                     buffer.append(str);
-                }
+
                 in.close();
                 br.close();
                 System.out.println("Successfully accept data!");
                 result = Integer.parseInt(buffer.toString());
 
-            } else {
-                System.out.println("请稍后");  //但好像不能这么写 用什么handle send message
-            }
+            } else System.out.println("请稍后");  //但好像不能这么写 用什么handle send message
+
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            urlConnection.disconnect();//使用完关闭TCP连接，释放资源
+            urlConnection.disconnect();
         }
+
         return result;
     }
 }

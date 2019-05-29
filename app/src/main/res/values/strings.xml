@@ -1,26 +1,78 @@
 <resources>
     <string name="app_name">MachineLearningTutorial</string>
-    <string name="practice">Practice</string>
-    <string name="tutorial">Tutorial</string>
-    <string name="back">Back</string>
-    <string name="next">Next</string>
-    <string name="title"> </string>
-    <string name="to_env">I See</string>
-    <string name="fight_it">Fight</string>
-    <string name="re_start">Try Again</string>
-    <string name="re_fight">Fight Again</string>
-    <string name="to_func">OK</string>
-    <string name="to_fight">Fight</string>
-    <string name="ally">Ally</string>
-    <string name="betray">Betray</string>
-    <string name="description">Description</string>
-    <string name="to_end">OK</string>
-    <string name="fight_title">Fight It</string>
-    <string name="end_title">Game Over</string>
-    <string name="setting_title">Setting</string>
+    <string name="more">更多</string>
+    <string name="practice">实战</string>
+    <string name="tutorial">教程</string>
+    <string name="back">返回</string>
+    <string name="help">帮助</string>
+
+    <string name="title">0</string>
+    <string name="num_default">0</string>
+    <string name="default_s"></string>
+
+    <string name="re_evo">再次进化</string>
+    <string name="re_inquiry">重填问卷</string>
+
+    <string name="ally">合作</string>
+    <string name="betray">背叛</string>
+
+    <string name="fight_it">对打</string>
+    <string name="to_fight">打一架</string>
+    <string name="fight_title">打一架</string>
+    <string name="end_title">游戏结束</string>
+    <string name="setting_title">设置</string>
     <string name="evo_title">Evolution</string>
     <string name="test">Test</string>
-    <string name="des_help">Help</string>
-    <string name="to_evo">Start</string>
-    <string name="num_default">0</string>
+
+    <string name="crossing_strategy">交叉策略</string>
+    <string name="choosing_strategy">选择策略</string>
+
+    <string name="show_res">展示结果</string>
+    <string name="inquiry1">
+        1. 和一个完全陌生的人第一轮博弈，你倾向选择:
+    </string>
+    <string name="inquiry2">
+        2. 如果上一轮你们共同合作了，下一轮你倾向选择:
+    </string>
+    <string name="inquiry3">
+        3. 如果上一轮你们都欺骗了对方，下一轮你倾向选择:
+    </string>
+    <string name="inquiry4">
+        4. 如果上一轮你选择合作，而对面欺骗了你，下一轮你倾向选择:
+    </string>
+    <string name="inquiry5">
+        5. 如果上一轮对方选择合作，而你欺骗了对方，下一轮你倾向选择:
+    </string>
+
+    <string name="to_func">确定</string>
+    <string name="to_end">确定</string>
+    <string name="back_from_bulb">明白</string>
+    <string name="to_env">明白</string>
+    <string name="to_evo">开始进化!</string>
+    <string name="to_inquiry">我也要玩</string>
+    <string name="score_info">第 %4d 代的最高分是 %4d</string>
+    <string name="my_end_score">你最终的得分是 %d</string>
+    <string name="pop_end_score">你的杰作的得分是 %d</string>
+
+    <!--TODO:-->
+    <string name="description">介绍实战部分</string>
+    <string name="env_detail">环境设置描述</string>
+    <string name="func_detail">函数设置描述</string>
+    <string name="evo_detail">进化细节描述</string>
+    <string name="inquiry_detail">问卷细节描述</string>
+    <string name="end_detail">结局细节描述</string>
+    <string name="fight_detail">对战说明</string>
+    <string name="tutorial_text">
+        Hello！\ 欢迎来到Genetic\ Gamble！\n\n 在这个游戏中，你将深入浅出了解到【非零和博弈】和【遗传算法】的小知识！\n\n
+        这是你没有见过的养成类游戏，只需体验三分钟，你就会像我一样，爱上这款游戏！\n\n 接下来，你将从两个故事中了解博弈游戏的规则和遗传算法的简单思想。\n\n
+        之后，你将通过一个小游戏，选择合适进化环境，运用遗传算法进化出属于你的”机器人“，在我们设定的环境中与机器人进行博弈。\n\n 游戏总时长约XX分钟，Enjoy Yourself!\n\n
+    </string>
+    <string name="dilemma_text">
+        警方逮捕甲、乙两名嫌疑犯，但没有足够证据指控二人入罪。\n\n于是警方分开囚禁嫌疑犯，分别和二人见面，并向双方提供以下相同的选择：\n\n
+        若一人认罪并作证检举对方（相关术语称“背叛”对方），而对方保持沉默，此人将即时获释，沉默者将判监10年.\n\n 若二人都保持沉默（相关术语称互相“合作”），则二人同样判监半年。\n\n
+        若二人都互相检举（互相“背叛”），则二人同样判监2年。\n\n
+    </string>
+    <string name="evolution_text">进化教程</string>
+    <string name="rule_text">游戏规则说明</string>
+
 </resources>

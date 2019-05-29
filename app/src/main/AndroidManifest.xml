@@ -2,47 +2,83 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
           package="com.example.papersleep.machinelearningtutorial">
+
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
-        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_descriptor"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/final_icon"
+        android:label="GeneticGamble"
+        android:roundIcon="@drawable/final_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning,UnusedAttribute">
-        <activity android:name=".MainActivity">
+        <activity android:name=".practice.NextActivity"/>
+        <activity android:name=".More.OnlineFightActivity"/>
+        <activity android:name=".More.LearnActivity"/>
+        <activity android:name=".More.ThanksActivity"/>
+        <activity android:name=".More.MoreActivity"/>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".tutorial.TutorialActivity">
+        <activity android:name=".tutorial.TutorialActivity"/>
+        <activity
+            android:name=".practice.PracticeActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".not_activity.BaseActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".practice.EnvSetting"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".practice.FuncSetting"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".practice.Evolution"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".tutorial.FightIt"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".practice.EndingAndSearching"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".practice.IterMutaSetting"
+            android:launchMode="singleTask"/>
+        <activity android:name=".practice.Inquiry"/>
+        <activity android:name=".tutorial.VariationActivity"/>
+        <activity android:name=".tutorial.SelectActivity"/>
+        <activity android:name=".tutorial.T_EvolutionActivity"/>
+        <activity android:name=".tutorial.ChromosomeActivity"/>
+        <activity android:name=".tutorial.CodingActivity"/>
+        <activity android:name=".tutorial.SpecificActivity"/>
+        <activity android:name=".tutorial.GeneActivity"/>
+        <activity android:name=".tutorial.RuleActivity"/>
+        <activity android:name=".view.LoadingActivity"/>
+        <activity android:name=".practice.AfterBActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".tutorial.DilemmaActivity"/>
+        <activity android:name=".tutorial.Explanation"/>
+        <activity android:name=".practice.ComplementA">
         </activity>
-        <activity android:name=".practice.PracticeActivity"
-                  android:launchMode="singleTask">
+        <activity android:name=".practice.ComplementB">
         </activity>
-        <activity android:name=".not_activity.BaseActivity"
-                  android:launchMode="singleTask">
+        <activity android:name=".practice.NewEnding">
         </activity>
-        <activity android:name=".practice.EnvSetting"
-                  android:launchMode="singleTask">
+        <activity android:name=".practice.ComplementC">
         </activity>
-        <activity android:name=".practice.FuncSetting"
-                  android:launchMode="singleTask">
+        <activity android:name=".practice.ComplementD">
         </activity>
-        <activity android:name=".practice.Evolution"
-                  android:launchMode="singleTask">
-        </activity>
-        <activity android:name=".practice.FightIt"
-                  android:launchMode="singleTask">
-        </activity>
-        <activity android:name=".practice.EndingAndSearching"
-                  android:launchMode="singleTask">
+        <activity android:name=".practice.RecycleFight">
         </activity>
     </application>
 
